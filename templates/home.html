@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block container %}
+  <div class="top-pad">
+
+      <div class="well">
+        <h2>
+          <pre>Your IPv4 address:</pre>
+          <mark>{{ request.remote_addr }}</mark>
+        </h2>
+      </div>
+
+  </div>
+{% endblock %}
