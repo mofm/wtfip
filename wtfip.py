@@ -9,8 +9,8 @@ gi = pygeoip.GeoIP('data/GeoLiteCity.dat', pygeoip.MEMORY_CACHE)
 @app.route('/')
 @app.route('/home')
 def home():
-    geo_data = gi.record_by_addr(request.remote_addr)
-    return render_template('home.html', geo_data=geo_data)
+    geo_data = gi.country_name_by_addr(request.remote_addr)
+    return render_template('home.html')
 
 
 if __name__ == '__main__':
