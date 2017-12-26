@@ -7,6 +7,8 @@
         <h2>
           <pre>Your IPv4 address:</pre>
           <mark>{{ request.remote_addr }}</mark>
+          <pre>Your Country:</pre>
+          <mark>{{ geo_data.country_name_by_addr }}</mark>
         </h2>
       </div>
 
